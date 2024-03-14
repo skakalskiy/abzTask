@@ -1,0 +1,26 @@
+nav {
+    background: var(--nav-background);
+
+    & .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 60px;
+
+        & .logo {
+            cursor: pointer;
+        }
+
+        & .buttons {
+            width: 210px;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    nav {
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,137 @@
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    & .text {
+        max-width: 380px;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 15px 10px;
+        margin-bottom: 40px;
+    }
+
+    & .last {
+        margin-bottom: 0;
+    }
+
+    & .num {
+        margin-top: 0;
+        opacity: .5;
+        max-width: 402px;
+        width: 100%;
+
+    }
+
+    & .flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 200px;
+        width: 100%;
+
+        & .pos {
+            margin: 5px 0 0 15px;
+            
+        }
+    }
+}
+
+.successBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .successImg {
+        margin-top: 30px;
+    }
+}
+
+input {
+    border-radius: 5px;
+
+    &[type="file"] {
+        display: none;
+    }
+}
+
+.uploadBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    & .uploadLabel {
+        max-width: 100px;
+        width: 100%;
+        color: var(--btn-color);
+        padding: 15px 10px;
+        background: var(--uploadInput-background);
+        cursor: pointer;
+        border: 1px solid var(--uploadBorder-background);
+        border-radius: 5px 0 0 5px;
+    }
+
+    & p {
+        max-width: 200px;
+        width: 100%;
+        color: var(--btn-color);
+        padding: 15px 10px;
+        background: var(--uploadInput-background);
+        cursor: default;
+        border: 1px solid var(--uploadBorder-background);
+        border-left: 0;
+        border-radius: 0 5px 5px 0;
+        opacity: .5;
+    }
+}
+
+
+
+@media (max-width: 405px) {
+    input {
+        max-width: 280px !important;
+    }
+
+    .num {
+        max-width: 280px !important;
+    }
+
+    .uploadBlock {
+
+        & .uploadLabel {
+            max-width: 90px;
+            width: 100%;
+            font-size: 12px;
+
+        }
+
+        & p {
+            max-width: 190px;
+            width: 100%;
+            font-size: 12px;
+
+        }
+    }
+}
+
+.check {
+    cursor: pointer;
+}
+
+.submitBtn {
+    background: var(--btnSubmit-background);
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    color: var(--btn-color);
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.title {
+    text-align: center;
+
+    & h1 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 40px;
+        color: var(--title-color);
+    }
+
+}

@@ -1,0 +1,7 @@
+.footer {
+    margin-top: 70px;
+
+    & hr {
+        border: 1px solid var(--footer-line-backgroud);
+    }
+}
