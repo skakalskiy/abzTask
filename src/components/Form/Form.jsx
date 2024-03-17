@@ -88,7 +88,7 @@ const Form = ({ token, position, getUserInstanse }) => {
 
   return (
     <>
-      <form onSubmit={(e) => {
+      <form className='form' onSubmit={(e) => {
         e.preventDefault();
         handleSubmit()
       }}>

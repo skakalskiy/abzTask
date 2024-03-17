@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
+import { Link } from 'react-scroll';
 
 import './Navbar.scss';
 
@@ -13,8 +14,8 @@ const Navbar = () => {
                     <img className='logo' src={logo} alt="logo" />
                 </div>
                 <div className='flex buttons'>
-                    <Button text='Users' />
-                    <Button text='Sign up' />
+                    <Link to='users' smooth={true} offset={-100} duration={500}><Button text='Users' /></Link>
+                    <Link to='form' smooth={true} offset={-100} duration={500}><Button text='Sign up' /></Link>
                 </div>
             </div>
         </nav>

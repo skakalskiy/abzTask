@@ -69,8 +69,6 @@ function App() {
     const res = await response.json();
     if (res) {
       users.unshift(res?.user)
-      console.log(res.user)
-      console.log(users)
     }
   }
   
